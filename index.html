@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco cavalli</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="horse"></div>
+            <ul>
+                <li>C</li>
+                <li>O</li>
+                <li>R</li>
+                <li>S</li>
+                <li>A</li>
+    
+                <li>D</li>
+                <li>E</li>
+                <li>I</li>
+    
+                <li>C</li>
+                <li>A</li>
+                <li>V</li>
+                <li>A</li>
+                <li>L</li>
+                <li>L</li>
+                <li>I</li>
+            </ul>
+            <div class="horse"></div>
+    </header>
+    <main>
+
+        <div id="fabrizio"><p>SCEGLI SU CHI SCOMMETERE</p></div>
+        
+
+        <form action="./PHP/gioco.php" method="post">
+            <button name="scelta_c"><img src="./IMG/bg_c13.gif"></button>
+            <button name="scelta_d"><img src="./IMG/bg_d13.gif"></button>
+            <button name="scelta_h"><img src="./IMG/bg_h13.gif"></button>
+            <button name="scelta_s"><img src="./IMG/bg_s13.gif"></button>
+
+             <!-- input non visibile per metterci dentro i dati e utilizzarli dal php  -->
+            <input type="hidden" id="carte" name="carte" value="">
+            <input type="hidden" id="posizioni" name="posizioni" value="">
+            <input type="hidden" id="carteSX" name="carteSX" value="">
+            <input type="hidden" id="carteSxTurn" name="carteSxTurn" value="0,0,0,0,0,0">
+        </form>
+    </main>
+    <footer>
+        <h3>Progetto di Isoardi e Filipi</h3>
+    </footer>
+</body>
+</html>
